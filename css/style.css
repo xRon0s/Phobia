@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+body {
+    cursor: url(ten.cur), !important; 
+    margin: 0;
+    height: 100vh;
+}
+
+
+h1{
+    font-size:50px;
+}
+p{
+    color: black
+}
