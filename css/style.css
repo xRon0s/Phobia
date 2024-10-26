@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 body {
-    cursor: url(tenP.cur), !important; 
+    cursor: url(tenP.cur), auto; 
     margin: 0;
     height: 100vh;
 }
