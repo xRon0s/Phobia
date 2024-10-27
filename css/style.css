@@ -7,8 +7,31 @@ body {
     font-family: "ten-mincho";
     font-weight: 400;
     font-style: italic;
+    background-color: #f7f7f7;
 }
 
+.Kono{
+  text-align: left;
+  padding-top: 0px;
+}
+
+.repeat{
+  background-image: url('backKono.png');
+  background-size: 440px 280px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
+
+ul{
+    padding-left:20px;
+  }
+  
+li{
+    list-style:none;
+  }
 
 h1{
     font-size:50px;
@@ -16,3 +39,29 @@ h1{
 p{
     color: black
 }
+nav {
+  width: 100%;
+  height: 70px;
+  background-color: dimgray;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+nav img{
+  margin-top: -15px;
+}
+ul {
+  display: flex;
+}
+li {
+  list-style: none;
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin-left:50px;
+  margin-right: 0px;
+}
+a:hover {
+    color: rgb(200, 250, 220);
+  }
