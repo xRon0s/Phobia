@@ -4,6 +4,9 @@ body {
     cursor: url(tenP.cur), auto; 
     margin: 0;
     height: 100vh;
+    font-family: "ten-mincho";
+    font-weight: 400;
+    font-style: italic;
 }
 
 
