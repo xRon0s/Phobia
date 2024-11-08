@@ -1,17 +1,19 @@
-// 動画の読み込みが完了したらローディング画面を非表示にして、メインコンテンツを表示
 const video = document.getElementById('introVideo');
 const loadingScreen = document.getElementById('loading');
 const content = document.getElementById('content');
 
-// 動画の読み込みが完了したときのイベント
+// 動画が正しく読み込まれて再生されるか確認
 video.onloadeddata = function () {
-    video.play();  // 動画が読み込まれたら再生開始
+    console.log("Video loaded, starting playback.");
+    video.play();
 };
 
+// 動画が終了した時にローディング画面を非表示にしてコンテンツを表示
 video.onended = function () {
+    console.log("Video ended.");
     setTimeout(function () {
-        loadingScreen.style.display = 'none';
-        content.style.display = 'block';
+        loadingScreen.style.display = 'none';  // ローディング画面を非表示
+        content.style.display = 'block';       // コンテンツを表示
     }, 1000);  // 1秒待ってからコンテンツ表示
 };
 
