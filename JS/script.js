@@ -9,11 +9,11 @@ const content = document.getElementById('content');
 
 // モバイルデバイスの場合、アニメーションをスキップ
 if (isMobile()) {
-    // ローディング画面を即座に非表示にし、コンテンツを表示
+    // モバイルの場合、videoを非表示にして、すぐにコンテンツを表示
     loadingScreen.style.display = 'none';
     content.style.display = 'block';
 } else {
-    // デスクトップの場合、アニメーションが終了したらコンテンツを表示
+    // デスクトップの場合、動画の再生が終了したらコンテンツを表示
     video.onended = function () {
         setTimeout(function () {
             loadingScreen.style.display = 'none';
