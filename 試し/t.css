@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.item {
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+
+.content {
+    position: relative;
+    white-space: nowrap; /* テキストが折り返さないようにする */
+    transition: transform 0.3s ease, color 0.3s ease, font-family 0.3s ease; /* 色とフォントの変更もアニメーション */
+}
+
+/* ホバー時のスタイル */
+.item:hover .content {
+    animation: moveLeft 6s linear infinite; /* アニメーションを指定 */
+    -webkit-text-stroke:3px grey;
+    color: #fff;
+    font-family: 'Arial', sans-serif; /* フォントを変更 */
+    font-size:40px ;
+}
+
+@keyframes moveLeft {
+    0% {
+        transform: translateX(100%); /* 初期位置：右外 */
+    }
+    100% {
+        transform: translateX(-100%); /* 最終位置：左外 */
+    }
+}
