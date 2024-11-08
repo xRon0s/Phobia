@@ -1,21 +1,23 @@
+// モバイルデバイスかどうかを判定する関数
+function isMobile() {
+    return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+}
+
 const video = document.getElementById('introVideo');
 const loadingScreen = document.getElementById('loading');
 const content = document.getElementById('content');
 
-// 動画が正しく読み込まれて再生されるか確認
-video.onloadeddata = function () {
-    console.log("Video loaded, starting playback.");
-    video.play();
-};
-
-// 動画が終了した時にローディング画面を非表示にしてコンテンツを表示
-video.onended = function () {
-    console.log("Video ended.");
-    setTimeout(function () {
-        loadingScreen.style.display = 'none';  // ローディング画面を非表示
-        content.style.display = 'block';       // コンテンツを表示
-    }, 1000);  // 1秒待ってからコンテンツ表示
-};
-
-// 動画の読み込みを開始
-video.load();
+// モバイルデバイスの場合、アニメーションをスキップ
+if (isMobile()) {
+    // ローディング画面を即座に非表示にし、コンテンツを表示
+    loadingScreen.style.display = 'none';
+    content.style.display = 'block';
+} else {
+    // デスクトップの場合、アニメーションが終了したらコンテンツを表示
+    video.onended = function () {
+        setTimeout(function () {
+            loadingScreen.style.display = 'none';
+            content.style.display = 'block';
+        }, 1000);  // 動画終了後、1秒待ってからコンテンツ表示
+    };
+}
