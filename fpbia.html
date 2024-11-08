@@ -2,6 +2,7 @@
 <html lang="ja">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" defer></script>
   <script src="./js/script.js" defer></script>
+  
   <head>
     <meta charset="utf-8" />
     <title>琴空のPortfolio</title>
@@ -35,7 +36,14 @@
 
   </head>
 
-  <body class="repeat"><!-- ここから本文開始 -->
+    <body class="repeat"><!-- ここから本文開始 -->
+      <div id="loading">
+        <video id="introVideo" autoplay muted>
+          <source src="loading.mp4" type="video/mp4">
+          お使いのブラウザは動画をサポートしていません。
+        </video>
+    </div>
+  <div id="content">
     <nav>
       <ul class="u">
         <li>
@@ -97,5 +105,7 @@
     <h2><a2 id="Contact"><strong>Contact</strong></a2></h2>
     <a href="https://github.com/xRon0s"><p>Github</p></a>
     <p>e-mail : Reloadedlilia@gmail.com</p>
+  </div>
+
   </body> <!-- ここまで本文終了 -->
 </html>
