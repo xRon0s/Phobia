@@ -8,10 +8,11 @@ video.onloadeddata = function () {
     video.play();  // 動画が読み込まれたら再生開始
 };
 
-// 動画の再生が終了した時にローディング画面を非表示に
 video.onended = function () {
-    loadingScreen.style.display = 'none';  // ローディング画面を非表示
-    content.style.display = 'block';       // メインコンテンツを表示
+    setTimeout(function () {
+        loadingScreen.style.display = 'none';
+        content.style.display = 'block';
+    }, 1000);  // 1秒待ってからコンテンツ表示
 };
 
 // 動画の読み込みを開始
