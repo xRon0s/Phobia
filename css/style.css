@@ -8,6 +8,7 @@ body {
     font-weight: 400;
     font-style: italic;
     background-color:#f7f7f7;
+    touch-action: none;
 }
 
 /* ローディング画面のスタイル */
@@ -27,6 +28,7 @@ body {
 /* メインコンテンツのスタイル */
 #content {
   display: none;
+  font-size: 20px;
 }
 
 /* ビデオのスタイル（画面全体を覆うように） */
@@ -62,12 +64,17 @@ li{
   padding-left: 30px;
   display: block;
   place-items: center;
+  font-size: 1.2vw;
+}
+
+.ten{
+  font-size: 2vw;
 }
 
 h1{
     font-size:50px;
     padding-left: 30px;
-    font-size: 4vw;
+    font-size: 3vw;
 }
 
 
@@ -84,6 +91,7 @@ h3{
   padding-left: 30px;
   display: grid;
   place-items: center;
+  font-size: 2vw;
 }
 p{
     color: black;
@@ -202,7 +210,7 @@ summary {
     display: none; /* 初期状態では非表示 */
     position: fixed; /* ウィンドウの中央に固定 */
     top: 30%; /* 画面の縦方向中央 */
-    right: -19%; /* 画面の横方向中央 */
+    right: -15%; /* 画面の横方向中央 */
     transform: translate(-50%, -50%); /* 幅と高さを考慮して完全に中央揃え */
 
     width: 600px; /* 任意の幅 */
@@ -220,7 +228,7 @@ summary {
   display: none; /* 初期状態では非表示 */
   position: fixed; /* ウィンドウの中央に固定 */
   top: 30%; /* 画面の縦方向中央 */
-  right: -19%; /* 画面の横方向中央 */
+  right: -15%; /* 画面の横方向中央 */
   transform: translate(-50%, -50%); /* 幅と高さを考慮して完全に中央揃え */
 
   width: 600px; /* 任意の幅 */
@@ -247,13 +255,13 @@ summary {
 }
 
 .bun {
-  font-size: 12px; /* 文字サイズを小さくする */
+  font-size: 20px; /* 文字サイズを小さくする */
   font-weight: bold;
   color: #333; /* 文字色（必要に応じて変更） */
   line-height: 1.5; /* 行間を少し広げる */
 }
 .bun2 {
-  font-size: 12px; /* 文字サイズを小さくする */
+  font-size: 20px; /* 文字サイズを小さくする */
   font-weight: bold;
   color: #333; /* 文字色（必要に応じて変更） */
   line-height: 1.5; /* 行間を少し広げる */
@@ -288,7 +296,7 @@ summary {
 }
 
   
-  @media(max-width:1000px){
+@media(max-width:1000px){
     .repeat {
       background-size: 300px 200px; /* 例: 背景画像のサイズを小さく調整 */
     }
@@ -308,7 +316,7 @@ summary {
     }
   }
   
-  @media(max-width:500px){
+@media(max-width:500px){
     .repeat {
       background-size: 220px 140px; /* さらに縮小 */
     }
@@ -318,7 +326,7 @@ summary {
       letter-spacing: -1px; /* より狭く */
     }
     nav a {
-      letter-spacing: -1px !important;
+      letter-spacing: -2px !important;
       display: inline-block;  /* インラインブロックにして、レイアウトを制御 */
       white-space: nowrap;  /* 少し狭く調整 */
     }
@@ -327,7 +335,7 @@ summary {
     nav {
       padding-left: 10px;  /* スペース調整 */
     }
-    }
+    
     p{font-size: 3vw;}
     summary{
       padding: 6em;

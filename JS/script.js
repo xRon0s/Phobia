@@ -21,3 +21,25 @@ if (isMobile()) {
         }, 1000);  // 動画終了後、1秒待ってからコンテンツ表示
     };
 }
+
+document.body.addEventListener('touchstart', function(e) {
+    // 2本以上の指が使われている場合、デフォルトの動作を無効化
+    if (e.touches.length > 1) {
+      e.preventDefault();  // 拡大縮小やスクロールを無効化
+    }
+  }, { passive: false }); // passive: falseを指定しないとpreventDefault()が効かない
+  
+document.body.addEventListener('touchmove', function(e) {
+    // 同様に、タッチムーブ操作も無効化
+    if (e.touches.length > 1) {
+      e.preventDefault();  // スクロールやズームを無効化
+    }
+  }, { passive: false });
+
+
+  document.body.addEventListener('wheel', function(e) {
+    // コントロールキーが押されている場合は拡大縮小とみなす
+    if (e.ctrlKey) {
+        e.preventDefault();  // 拡大縮小を無効化
+    }
+}, { passive: false });
