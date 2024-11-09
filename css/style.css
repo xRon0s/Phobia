@@ -311,7 +311,7 @@ summary {
   
   @media(max-width:500px){
     .repeat {
-      background-size: 250px 160px; /* さらに縮小 */
+      background-size: 220px 140px; /* さらに縮小 */
     }
 
     /* ヘッダー文字間をさらに狭くする */
