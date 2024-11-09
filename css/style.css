@@ -325,7 +325,7 @@ summary {
   
     /* 文字サイズなど他の要素も確認 */
     nav {
-      padding-left: 5px;  /* スペース調整 */
+      padding-left: 10px;  /* スペース調整 */
     }
     }
     p{font-size: 3vw;}
