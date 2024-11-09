@@ -318,7 +318,7 @@ summary {
       letter-spacing: -1px; /* より狭く */
     }
     nav a {
-      letter-spacing: -4px !important;
+      letter-spacing: -1px !important;
       display: inline-block;  /* インラインブロックにして、レイアウトを制御 */
       white-space: nowrap;  /* 少し狭く調整 */
     }
