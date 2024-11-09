@@ -317,8 +317,14 @@ summary {
     h1, h2 {
       letter-spacing: -1px; /* より狭く */
     }
-    nav a{
-      letter-spacing: -50px;
+    nav a {
+      letter-spacing: -2px !important;  /* 少し狭く調整 */
+    }
+  
+    /* 文字サイズなど他の要素も確認 */
+    nav {
+      padding-left: 10px;  /* スペース調整 */
+    }
     }
     p{font-size: 3vw;}
     summary{
