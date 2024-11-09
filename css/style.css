@@ -290,6 +290,14 @@ summary {
 
   
   @media(max-width:1000px){
+    .repeat {
+      background-size: 300px 200px; /* 例: 背景画像のサイズを小さく調整 */
+    }
+
+    /* ヘッダー文字間を狭くする */
+    h1, h2 {
+      letter-spacing: -0.5px; /* 文字間を狭くする */
+  }
     h2{
       font-size: 7vw;
     }
@@ -302,6 +310,14 @@ summary {
   }
   
   @media(max-width:500px){
+    .repeat {
+      background-size: 250px 160px; /* さらに縮小 */
+    }
+
+    /* ヘッダー文字間をさらに狭くする */
+    h1, h2 {
+      letter-spacing: -1px; /* より狭く */
+    }
     p{font-size: 3vw;}
     summary{
       padding: 6em;
