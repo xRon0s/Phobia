@@ -61,7 +61,6 @@ li{
 .skils-list{
   padding-left: 30px;
   display: block;
-  display: grid;
   place-items: center;
 }
 
