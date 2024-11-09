@@ -315,7 +315,7 @@ summary {
 
     /* ヘッダー文字間をさらに狭くする */
     h1, h2 {
-      letter-spacing: -1px; /* より狭く */
+      letter-spacing: -4px; /* より狭く */
     }
     p{font-size: 3vw;}
     summary{
