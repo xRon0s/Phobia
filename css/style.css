@@ -318,7 +318,7 @@ summary {
       letter-spacing: -1px; /* より狭く */
     }
     nav a{
-      letter-spacing: -1px;
+      letter-spacing: -10px;
     }
     p{font-size: 3vw;}
     summary{
