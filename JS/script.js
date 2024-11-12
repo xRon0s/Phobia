@@ -43,3 +43,29 @@ document.body.addEventListener('touchmove', function(e) {
         e.preventDefault();  // 拡大縮小を無効化
     }
 }, { passive: false });
+
+// ページが読み込まれた後に実行
+window.addEventListener('load', function () {
+  const popup = document.getElementById('popup');
+  const playButton = document.getElementById('play-button');
+  const noPlayButton = document.getElementById('no-play-button');
+  const bgm = document.getElementById('bgm');
+
+  bgm.volume = 0.05;
+
+  // ポップアップを表示
+  popup.style.display = 'flex';
+
+  // 「再生する」ボタンがクリックされた場合
+  playButton.addEventListener('click', function () {
+    bgm.play(); // 音楽を再生
+    popup.style.display = 'none'; // ポップアップを閉じる
+  });
+
+  // 「再生しない」ボタンがクリックされた場合
+  noPlayButton.addEventListener('click', function () {
+    bgm.pause(); // 音楽を再生しない
+    bgm.currentTime = 0; // 音楽の再生位置をリセット
+    popup.style.display = 'none'; // ポップアップを閉じる
+  });
+});
