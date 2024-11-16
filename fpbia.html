@@ -45,6 +45,22 @@
   </head>
 
     <body class="repeat"><!-- ここから本文開始 -->
+
+  <div id="left-edge"></div>
+
+  <div class="sidebar">
+    <ul>
+      <li><a href="#section1">セクション1</a></li>
+      <li><a href="#section2">セクション2</a></li>
+      <li><a href="#section3">セクション3</a></li>
+      <li><a href="#section4">セクション4</a></li>
+    </ul>
+  </div>
+
+      <div class="container">
+        <div class="logo"></div>
+      </div>
+
       <div id="loading">
         <video id="introVideo" autoplay muted>
           <source src="loading.mp4" type="video/mp4">
@@ -60,9 +76,18 @@
 
     <div id="popup" class="popup">
       <div class="popup-content">
-        <h2>このサイトではbgmが流れます。再生しますか？</h2>
-        <button id="play-button">再生する</button>
-        <button id="no-play-button">再生しない</button>
+        <img src="css/Alde.png">
+        <p class="popup-message">このサイトではbgmが流れます。再生しますか？</h2>
+          <div class="button-container">
+          <button id="play-button">
+            <span class="bold-slash">はい</span>
+          </button>
+          <span>/</span>
+          <button id="no-play-button">
+            <span class="bold-slash">いいえ</span>
+          </button>
+          </div>
+          
       </div>
     </div>
     

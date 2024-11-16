@@ -69,3 +69,58 @@ window.addEventListener('load', function () {
     popup.style.display = 'none'; // ポップアップを閉じる
   });
 });
+
+let lastTime = 0;
+let timeSinceLastStar = 0;
+const interval = 1000; // 星を生成する間隔 (ミリ秒)
+const maxStars = 5;   // 画面に表示する最大星の数
+let currentStars = 0;  // 現在の星の数
+
+// 流れ星を生成する関数
+// 流れ星を生成する関数
+function createShootingStar() {
+  if (currentStars >= maxStars) return;  // 最大数に達したら新しい星は生成しない
+
+  const star = document.createElement('img');
+  star.src = 'JS/star.png';  // 流れ星の画像をここで指定します
+  star.classList.add('star');
+
+  const container = document.querySelector('.container');
+  container.appendChild(star);
+
+  const randomX = Math.random() * 100;  // x軸ランダム位置（%）
+  const randomY = Math.random() * 100;  // y軸ランダム位置（%）
+  const randomDelay = Math.random() * 5;  // アニメーションのランダムな遅延
+
+  star.style.left = `${randomX}%`;
+  star.style.top = `${randomY}%`;
+  star.style.animationDelay = `${randomDelay}s`;
+
+  star.addEventListener('animationend', function () {
+    star.remove();
+    currentStars--;  // 星が消えたら数を減らす
+    createShootingStar();  // 星が消えたら新たな星を生成
+  });
+
+  currentStars++;  // 新しい星を生成したら数を増やす
+}
+
+// アニメーションを管理する関数
+function animate(time) {
+  const deltaTime = time - lastTime;
+  lastTime = time;
+
+  // 一定間隔で星を生成（無限に生成しない）
+  if (timeSinceLastStar >= interval) {
+    createShootingStar();
+    timeSinceLastStar = 0; // リセット
+  } else {
+    timeSinceLastStar += deltaTime; // 経過時間を追加
+  }
+
+  // 次のフレームを呼び出し
+  requestAnimationFrame(animate);
+}
+
+// アニメーションを開始
+requestAnimationFrame(animate);
