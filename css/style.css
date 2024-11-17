@@ -7,7 +7,7 @@ body {
     font-family: "ten-mincho";
     font-weight: 400;
     font-style: italic;
-    background-color:#f7f7f7;
+    background-color:#fdfdfd;
     touch-action: none;
     overflow-x: hidden;
 }
@@ -42,6 +42,7 @@ body {
   
   .sidebar ul li {
     margin: 20px 0;
+    padding-bottom: 20px;
     display: block;
   }
   
@@ -79,10 +80,9 @@ body {
   width: 100%;
   height: 100%;
   background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   z-index: 9999;
+  background-position-x: center;
+  background-position-y: 130px;
 }
 
 /* メインコンテンツのスタイル */
@@ -120,10 +120,11 @@ li{
     list-style:none;
   }
 .skils-list{
-  padding-left: 30px;
-  display: block;
-  place-items: center;
+  padding-left: 33vw;
   font-size: 1.2vw;
+  display: block;
+  margin: 0px;
+  padding-bottom: 10px;
 }
 
 #bgm {
@@ -179,29 +180,33 @@ li{
 
 .ten{
   font-size: 2vw;
+  margin: 0px;
+  padding-top: 20px;
+  border-top: 5px solid #000; /* 黒い2pxの線 */
+  padding-top: 40px;
+  padding-bottom: 20px;
 }
 
 h1{
     font-size:50px;
     padding-left: 30px;
     font-size: 3vw;
+    padding-bottom: 300px;
 }
 
 
 h2{
-  display: grid;
-  place-items: center;
-  font-size: 4vw;
+  padding-left: 25vw;
+  font-size: 6vw;
   font-weight: normal;
   margin-bottom: 5px;
 }
 
 
 h3{
-  padding-left: 30px;
-  display: grid;
-  place-items: center;
-  font-size: 2vw;
+  padding-left: 30vw;
+  
+  font-size: 1.5vw;
 }
 p{
     color: black;
@@ -211,8 +216,9 @@ p{
 }
 
 .fre{
-  display: block;
+  display: flex;
 }
+
 
 .pro{
   background-color:#f7f7f7;
@@ -253,6 +259,9 @@ details {
     padding-left: 30px;
   }
   
+.ba{
+  background-color:#f7f7f7;
+}
 
 
 summary {
@@ -316,6 +325,32 @@ summary {
   padding-top: 0px;
 }
 
+.lin3{
+  position: relative;
+  border: 1.8px solid #aaa;
+  padding: 0.5em 0.5em 0;
+  padding-left: 30px;
+  font-weight: bold;
+  
+  margin: 0em;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+.lin3 a{
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.lin3 p{
+  font-size: 2vw;
+}
+
+.lin3 a p{
+  margin: 7;
+  padding-top: 0px;
+}
+
 .port {
     display: none; /* 初期状態では非表示 */
     position: fixed; /* ウィンドウの中央に固定 */
@@ -352,6 +387,24 @@ summary {
   padding: 0px;
 }
 
+.port3 {
+  display: none; /* 初期状態では非表示 */
+  position: fixed; /* ウィンドウの中央に固定 */
+  top: 40%; /* 画面の縦方向中央 */
+  right: -17%; /* 画面の横方向中央 */
+  transform: translate(-50%, -50%); /* 幅と高さを考慮して完全に中央揃え */
+
+  width: 600px; /* 任意の幅 */
+  height: 500px;
+
+  border: 1px solid #333;
+  background-color: #fff;
+  border-radius: 0px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 10; /* 重なり順を前面に */
+  padding: 0px;
+}
+
 .port-image {
   width: 100%; /* 画像の幅をポートの幅に合わせる */
   border: 1px solid #ccc; /* グレーの枠をつける */
@@ -364,14 +417,27 @@ summary {
   margin-bottom: 10px; /* 画像とテキストの間にスペースを追加 */
 }
 
+.port-image3 {
+  width: 100%; /* 画像の幅をポートの幅に合わせる */
+  border: 1px solid #ccc; /* グレーの枠をつける */
+  margin-bottom: 10px; /* 画像とテキストの間にスペースを追加 */
+}
+
 .bun {
-  font-size: 20px; /* 文字サイズを小さくする */
+  font-size: 15px; /* 文字サイズを小さくする */
   font-weight: bold;
   color: #333; /* 文字色（必要に応じて変更） */
   line-height: 1.5; /* 行間を少し広げる */
 }
 .bun2 {
   font-size: 20px; /* 文字サイズを小さくする */
+  font-weight: bold;
+  color: #333; /* 文字色（必要に応じて変更） */
+  line-height: 1.5; /* 行間を少し広げる */
+}
+
+.bun3 {
+  font-size: 15px; /* 文字サイズを小さくする */
   font-weight: bold;
   color: #333; /* 文字色（必要に応じて変更） */
   line-height: 1.5; /* 行間を少し広げる */
@@ -385,6 +451,10 @@ summary {
   display: block;
 }
 
+.lin3:hover ~ .port3{
+  display: block;
+}
+
 .lin:hover p{
   color: rgb(0, 83, 151);
 }
@@ -393,11 +463,19 @@ summary {
   color: rgb(0, 83, 151);
 }
 
+.lin3:hover p{
+  color: rgb(0, 83, 151);
+}
+
 .port:hover {
   display: block;
 }
 
 .port2:hover{
+  display: block;
+}
+
+.port3:hover{
   display: block;
 }
 
