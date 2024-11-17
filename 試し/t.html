@@ -1,43 +1,19 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>左端にカーソルでスライドインメニュー</title>
-  <link rel="stylesheet" href="t.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天使の羽を描く</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+            width: 100%;
+            height: 500px;
+        }
+    </style>
 </head>
 <body>
-
-  <!-- 左端にマウスを置いた時に反応する領域 -->
-  <div id="left-edge"></div>
-
-  <div class="sidebar">
-    <ul>
-      <li><a href="#section1">セクション1</a></li>
-      <li><a href="#section2">セクション2</a></li>
-      <li><a href="#section3">セクション3</a></li>
-      <li><a href="#section4">セクション4</a></li>
-    </ul>
-  </div>
-
-  <div class="content">
-    <section id="section1">
-      <h1>セクション1</h1>
-      <p>コンテンツ1</p>
-    </section>
-    <section id="section2">
-      <h1>セクション2</h1>
-      <p>コンテンツ2</p>
-    </section>
-    <section id="section3">
-      <h1>セクション3</h1>
-      <p>コンテンツ3</p>
-    </section>
-    <section id="section4">
-      <h1>セクション4</h1>
-      <p>コンテンツ4</p>
-    </section>
-  </div>
-
+    <canvas id="myCanvas"></canvas>
+    <script src="t.js"></script>
 </body>
 </html>

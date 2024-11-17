@@ -59,6 +59,18 @@ window.addEventListener('load', function () {
   // 「再生する」ボタンがクリックされた場合
   playButton.addEventListener('click', function () {
     bgm.play(); // 音楽を再生
+
+    var tagImageContainer = document.getElementById('tag-image-container');
+    
+    setTimeout(function() {
+      tagImageContainer.style.opacity = 1;  // フェードイン
+    }, 2000);  // 2秒後
+  
+    // 7秒後にフェードアウトで非表示
+    setTimeout(function() {
+      tagImageContainer.style.opacity = 0;  // フェードアウト
+    }, 9000);  // 7秒後
+
     popup.style.display = 'none'; // ポップアップを閉じる
   });
 

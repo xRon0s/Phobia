@@ -182,8 +182,6 @@ li{
   font-size: 2vw;
   margin: 0px;
   padding-top: 20px;
-  border-top: 5px solid #000; /* 黒い2pxの線 */
-  padding-top: 40px;
   padding-bottom: 20px;
 }
 
@@ -597,4 +595,19 @@ button :hover{
     transform: translateX(-100px) translateY(500px) rotate(360deg); /* 画面外に流れながら回転 */
     opacity: 0;
   }
+}
+
+#tag-image-container {
+  position: fixed;
+  top: 120px;  /* 画像の位置を少し下に */
+  right: 20px;
+  z-index: 1000;
+  opacity: 0;  /* 初期状態は透明 */
+  pointer-events: none;  /* 画像がクリックできないように */
+  transition: opacity 2s ease-in-out;  /* フェードイン・アウトの遷移 */
+}
+
+#tag-image-container img {
+  width: 400px;  /* サイズを大きく */
+  height: auto;
 }
