@@ -10,7 +10,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0"
     />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/Tiphereth.css">
     <script>
   (function(d) {
     var config = {
@@ -57,10 +57,30 @@
   <div class="sidebar">
     <ul>
       <li><p class="ziko">自己紹介</p></li>
-      <li><p class="can">できること</p></li>
-      <li><p class="duc">作ったもの</p></li>
+      <li><p class="can">作ったもの</p></li>
+      <li><p class="duc">できること</p></li>
       <li><p class="here">活動場所</p></li>
+      <div class="gia">
+      <li><button id="configButton">Config</button></li>
+      </div>
     </ul>
+  </div>
+
+  <div id="configPopu" class="popu">
+    <div class="popu-content">
+        <span id="closeButton" class="close">&times;</span>
+        <h2>設定画面</h2>
+        <!-- 設定項目 -->
+        <form>
+            <label for="setting1">設定1：</label>
+            <input type="text" id="setting1" name="setting1"><br><br>
+
+            <label for="setting2">設定2：</label>
+            <input type="text" id="setting2" name="setting2"><br><br>
+
+            <button type="submit">保存</button>
+        </form>
+    </div>
   </div>
 
       <div class="container">
@@ -114,70 +134,90 @@
     <div class="ba">
     <h2 class="ten"><a2 id="Profile"><strong>Profle</strong></a2></h2>
     <p class="tenI">
-        ゲームブランド,Keyが大好きな情報系の高専生です。<br>大阪公立大学工業高等専門学校の知能情報コース,二年に所属しています。
+        ゲームブランドのKeyが大好きな情報系の高専生です。<br>大阪公立大学工業高等専門学校の知能情報コース,二年に所属しています。
     </p>
+
+    <div class="wh">
+    <div class="pro">
+      <h2 class="ten"><a2 id="Product"><strong>Product</strong></a2></h2>
+      <div class="lin">
+        <a href="Stella of The End.html"><p>ポートフォリオ</p></a>
+      </div>
+  
+      <div class="port">
+        <img src="Kono.png" alt="Image Description" class="port-image">
+        <p class="bun">このポートフォリオの作り方をまとめ中です。<br>随時更新中です</p>
+      </div>
+  
+      <div class="lin2">
+        <a href="https://github.com/xRon0s/my_project.git"><p>高専生向けプレゼンテーションアプリ</p></a>
+      </div>
+  
+      <div class="port2">
+        <img src="pre.png" alt="Image Description" class="port-image2">
+        <p class="bun2">製作段階なのでgithubに飛びます</p>
+      </div>
+      
+      <div class="lin3">
+        <a href="https://colab.research.google.com/drive/1NfaG7U5wnmgpgjcVCBXzR_upvKJOdgn8?usp=sharing"><p>ヒット！</p></a>
+      </div>
+  
+      <div class="port3">
+        <img src="PG04.png" alt="Image Description" class="port-image3">
+        <p class="bun3">pythonを用いて作ったあまりに簡単なゲームです…乗せるのを躊躇するくらい</p>
+      </div>
+      
+      <div class="lin4">
+        <a href="link"><p>???</p></a>
+      </div>
+  
+      <div class="port4">
+        <img src="sky.png" alt="No Image" class="port-image4">
+        <p class="bun4">随時更新予定です</p>
+      </div>
+
+    </div>
     <h2 class="ten"><a2 id="Skils"><strong>Skils</strong>  …創作活動で使えるスキルについてです</a2></h2>
     <div class="fre">
       <div>
     <h3>Flont-end</h3>
       <ul class="skils-list">
-      <li>HTML</li>
-      <li>CSS</li>
+      <li><img src="HTML.png">HTML</li>
+      <li><img src="CSS.png">CSS</li>
+      <li><img src="JS.png">JavaScript</li>
       </ul>
       </div>
       <div>
     <h3>Back-end</h3>
     <ul class="skils-list">
-      <li>Python</li>
+      <li><img src="python.png">Python</li>
+      <li><img src="Aruduino.png">Arduino</li>
     </ul>
       </div>
     </div>
     <h3>Tool</h3>
     <ul class="skils-list">
-      <li>VScode</li>
-      <li>GitHub</li>
-      <li>GoogleColaboratory</li>
-      <li>Canva</li>
+      <li><img src="VScode.png">VScode</li>
+      <li><img src="github.png">GitHub</li>
+      <li><img src="clip.png">CLIP STUDIO</li>
+      <li><img src="PP.png">Power Point</li>
+      <li><img src="cw.png">Cakewalk by Bandlab</li>
+      <li><img src="gc.png">Google Colaboratory</li>
+      <li><img src="cv.png">Canva</li>
+      <li><img src="AD.png">ArduinoIDE</li>
+      <li><img src="tinkercad.png">Tinkercad</li>
     </ul>
     </div>
     </div>
     
 
 
-    <div class="pro">
-    <h2 class="ten"><a2 id="Product"><strong>Product</strong></a2></h2>
-    <div class="lin">
-      <a href="Stella of The End.html"><p>ポートフォリオ</p></a>
-    </div>
-
-    <div class="port">
-      <img src="Kono.png" alt="Image Description" class="port-image">
-      <p class="bun">私の創作に対する志とこのポートフォリオの作り方をまとめました。<br>暇なときに見てやってください</p>
-    </div>
-
-    <div class="lin2">
-      <a href="https://github.com/xRon0s/my_project.git"><p>高専生向けプレゼンテーションアプリ</p></a>
-    </div>
-
-    <div class="port2">
-      <img src="pre.png" alt="Image Description" class="port-image2">
-      <p class="bun2">製作段階なのでgithubに飛びます</p>
-    </div>
-    
-    <div class="lin3">
-      <a href="https://colab.research.google.com/drive/1NfaG7U5wnmgpgjcVCBXzR_upvKJOdgn8?usp=sharing"><p>ヒット！</p></a>
-    </div>
-
-    <div class="port3">
-      <img src="PG04.png" alt="Image Description" class="port-image3">
-      <p class="bun3">pythonを用いて作ったあまりに簡単なゲームです…乗せるのを躊躇するくらい</p>
-    </div>
-
-
     
     <h2 class="ten"><a2 id="Contact"><strong>Contact</strong></a2></h2>
+    <div class="mar">
     <a href="https://github.com/xRon0s"><p>Github</p></a>
-    <p>e-mail : Reloadedlilia@gmail.com</p>
+    <p class="end">e-mail : Reloadedlilia@gmail.com</p>
+    </div>
   </div>
   </div>
 

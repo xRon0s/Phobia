@@ -72,6 +72,20 @@ body {
   }
   
 
+
+.gia{
+  padding-top: 350px;
+}
+.gia p{
+  font-weight: bold;
+}
+.gia img{
+  width: 20px;
+  padding-top: 50px;
+  vertical-align: middle;
+  vertical-align: baseline;
+}
+
 /* ローディング画面のスタイル */
 #loading {
   position: fixed;
@@ -89,6 +103,10 @@ body {
 #content {
   display: none;
   font-size: 20px;
+}
+
+.wh{
+  background-color: #fdfdfd;
 }
 
 /* ビデオのスタイル（画面全体を覆うように） */
@@ -111,6 +129,10 @@ body {
   background-attachment: fixed;
 }
 
+.end{
+  padding-bottom: 20px;
+}
+
 
 ul{
     padding-left:20px;
@@ -120,11 +142,17 @@ li{
     list-style:none;
   }
 .skils-list{
-  padding-left: 33vw;
-  font-size: 1.2vw;
+  padding-left: 30vw;
+  font-size: 1.4vw;
   display: block;
   margin: 0px;
   padding-bottom: 10px;
+}
+
+.skils-list img{
+  height: 2.0vw;
+  margin-right:10px ;
+  padding-top: 5px;
 }
 
 #bgm {
@@ -189,7 +217,7 @@ h1{
     font-size:50px;
     padding-left: 30px;
     font-size: 3vw;
-    padding-bottom: 300px;
+    padding-bottom: 500px;
 }
 
 
@@ -204,13 +232,17 @@ h2{
 h3{
   padding-left: 30vw;
   
-  font-size: 1.5vw;
+  font-size: 2.0vw;
 }
 p{
     color: black;
     display: grid;
     place-items: center;
     font-size: 1.3vw;
+}
+
+.mar a p{
+  padding-left: 30vw;
 }
 
 .fre{
@@ -349,6 +381,32 @@ summary {
   padding-top: 0px;
 }
 
+.lin4{
+  position: relative;
+  border: 1.8px solid #aaa;
+  padding: 0.5em 0.5em 0;
+  padding-left: 30px;
+  font-weight: bold;
+  
+  margin: 0em;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+.lin4 a{
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.lin4 p{
+  font-size: 2vw;
+}
+
+.lin4 a p{
+  margin: 7;
+  padding-top: 0px;
+}
+
 .port {
     display: none; /* 初期状態では非表示 */
     position: fixed; /* ウィンドウの中央に固定 */
@@ -403,6 +461,24 @@ summary {
   padding: 0px;
 }
 
+.port4 {
+  display: none; /* 初期状態では非表示 */
+  position: fixed; /* ウィンドウの中央に固定 */
+  top: 40%; /* 画面の縦方向中央 */
+  right: -17%; /* 画面の横方向中央 */
+  transform: translate(-50%, -50%); /* 幅と高さを考慮して完全に中央揃え */
+
+  width: 600px; /* 任意の幅 */
+  height: 500px;
+
+  border: 1px solid #333;
+  background-color: #fff;
+  border-radius: 0px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 10; /* 重なり順を前面に */
+  padding: 0px;
+}
+
 .port-image {
   width: 100%; /* 画像の幅をポートの幅に合わせる */
   border: 1px solid #ccc; /* グレーの枠をつける */
@@ -416,6 +492,12 @@ summary {
 }
 
 .port-image3 {
+  width: 100%; /* 画像の幅をポートの幅に合わせる */
+  border: 1px solid #ccc; /* グレーの枠をつける */
+  margin-bottom: 10px; /* 画像とテキストの間にスペースを追加 */
+}
+
+.port-image4 {
   width: 100%; /* 画像の幅をポートの幅に合わせる */
   border: 1px solid #ccc; /* グレーの枠をつける */
   margin-bottom: 10px; /* 画像とテキストの間にスペースを追加 */
@@ -441,6 +523,13 @@ summary {
   line-height: 1.5; /* 行間を少し広げる */
 }
 
+.bun4 {
+  font-size: 25px; /* 文字サイズを小さくする */
+  font-weight: bold;
+  color: #333; /* 文字色（必要に応じて変更） */
+  line-height: 1.5; /* 行間を少し広げる */
+}
+
 .lin:hover ~ .port{
     display: block;
 }
@@ -453,15 +542,24 @@ summary {
   display: block;
 }
 
+.lin4:hover ~ .port4{
+  display: block;
+}
+
 .lin:hover p{
   color: rgb(0, 83, 151);
 }
+
 
 .lin2:hover p{
   color: rgb(0, 83, 151);
 }
 
 .lin3:hover p{
+  color: rgb(0, 83, 151);
+}
+
+.lin4:hover p{
   color: rgb(0, 83, 151);
 }
 
@@ -474,6 +572,10 @@ summary {
 }
 
 .port3:hover{
+  display: block;
+}
+
+.port4:hover{
   display: block;
 }
 
@@ -599,7 +701,7 @@ button :hover{
 
 #tag-image-container {
   position: fixed;
-  top: 120px;  /* 画像の位置を少し下に */
+  top: 100px;  /* 画像の位置を少し下に */
   right: 20px;
   z-index: 1000;
   opacity: 0;  /* 初期状態は透明 */
@@ -610,4 +712,50 @@ button :hover{
 #tag-image-container img {
   width: 400px;  /* サイズを大きく */
   height: auto;
+}
+
+#configButton :hover{
+  color: aqua;
+}
+
+/* ポップアップの基本スタイル */
+.popu {
+  display: none; /* 初期状態で非表示 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* 背景を暗く */
+  justify-content: center;
+  align-items: center;
+}
+
+#configButton {
+  position: relative;
+  z-index: 100; /* configボタンのz-indexを大きくして前面に表示 */
+}
+
+.popu-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  height: 100%;
+  width: 100%;
+}
+
+.close {
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
 }

@@ -136,3 +136,26 @@ function animate(time) {
 
 // アニメーションを開始
 requestAnimationFrame(animate);
+
+
+// configボタンとポップアップを取得
+const configButton = document.getElementById('configButton');
+const configPopu = document.getElementById('configPopu');
+const closeButton = document.getElementById('closeButton');
+
+// configボタンがクリックされたときにポップアップを表示
+configButton.addEventListener('click', function() {
+    configPopu.style.display = 'flex';  // ポップアップを表示
+});
+
+// closeボタンがクリックされたときにポップアップを閉じる
+closeButton.addEventListener('click', function() {
+    configPopu.style.display = 'none';  // ポップアップを非表示
+});
+
+// ポップアップ外のクリックで閉じる（オプション）
+window.addEventListener('click', function(event) {
+    if (event.target === configPopu) {
+        configPopu.style.display = 'none';  // ポップアップを非表示
+    }
+});
