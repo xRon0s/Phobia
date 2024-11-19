@@ -1,0 +1,39 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* 高さを100%に設定 */
+}
+
+.full-screen-image {
+    width: 100vw; /* ビューポートの幅に合わせる */
+    height: 100vh; /* ビューポートの高さに合わせる */
+    object-fit: cover; /* 画像をコンテナにフィットさせる */
+    display: block; /* 画像の下に隙間ができないようにする */
+    user-select: none; /* 画像を選択できないようにする */
+    -webkit-user-select: none; /* Safari用の設定 */
+    -moz-user-select: none; /* Firefox用の設定 */
+    -ms-user-select: none; /* Internet Explorer用の設定 */
+    pointer-events: none;
+}
+
+.top-left-image {
+    position :absolute;
+    top: 0; /* 上に配置 */
+    left: 0; /* 左に配置 */
+    width: 250px;
+    height: auto;
+    opacity: 0; /* 初期は透明にする */
+    animation: slideIn 1s forwards; /* アニメーションを追加 */
+    animation-delay: 1s;
+}
+
+@keyframes slideIn {
+    0% {
+        left: -250px; /* 初期位置 */
+        opacity: 0; /* 初期透明度 */
+    }
+    100% {
+        left: 0; /* 最終位置 */
+        opacity: 1; /* 最終透明度 */
+    }
+}
