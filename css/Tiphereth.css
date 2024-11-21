@@ -241,9 +241,27 @@ p{
     font-size: 1.3vw;
 }
 
-.Pp{
-  margin: 0;
+.Pp a{
+  margin-left: 0px;
   padding: 0;
+  display: grid;
+  place-items: normal;
+}
+
+.Pp{
+  display: grid;
+  place-items: normal;
+}
+
+.Ppp{
+  color: #000000;
+
+}
+
+.PpPp{
+  color: #000000;
+  padding-left: 30vw;
+  font-size: 1.3vw;
 }
 
 .mar p a{
