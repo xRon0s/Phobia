@@ -241,8 +241,17 @@ p{
     font-size: 1.3vw;
 }
 
-.mar a p{
-  padding-left: 30vw;
+.Pp{
+  margin: 0;
+  padding: 0;
+}
+
+.mar p a{
+  padding-left: 0;
+}
+
+.cont{
+  padding-left: 0vw;
 }
 
 .fre{
@@ -673,6 +682,24 @@ button :hover{
       max-width: 400px;   /* 最大幅も400pxに制限 */
     }
   }
+
+/*
+@media (max-width:600px){
+  .port{
+    display: none;
+    position: center;
+    top: 20%;
+    right: 50%;
+    width: 100%;
+  }
+  .lin:hover ~ .port{
+    display: block;
+  }
+  .bun{
+    font-size: 10px;
+  }
+}
+*/
 
 .star {
     position: absolute;
