@@ -818,7 +818,8 @@ button {
 
 .gomen{
   display: none;
-  position: center;
+  top :0%;
+  left: 50%;
   width: 300px;
-  z-index: 50;
+  z-index: 5000;
 }
