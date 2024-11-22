@@ -6,12 +6,14 @@ function isMobile() {
 const video = document.getElementById('introVideo');
 const loadingScreen = document.getElementById('loading');
 const content = document.getElementById('content');
+const gomen = document.getElementById('gomen');
 
 // モバイルデバイスの場合、アニメーションをスキップ
 if (isMobile()) {
     // モバイルの場合、videoを非表示にして、すぐにコンテンツを表示
     loadingScreen.style.display = 'none';
     content.style.display = 'block';
+    gomen.style.display = 'block';
 } else {
     // デスクトップの場合、動画の再生が終了したらコンテンツを表示
     video.onended = function () {

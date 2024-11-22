@@ -815,3 +815,10 @@ button {
   font-size: 16px;
   cursor: pointer;
 }
+
+.gomen{
+  display: none;
+  position: center;
+  width: 300px;
+  z-index: 50;
+}
