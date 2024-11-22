@@ -253,6 +253,10 @@ p{
   place-items: normal;
 }
 
+.Pp:hover a{
+  color: cadetblue;
+}
+
 .Ppp{
   color: #000000;
 
@@ -318,6 +322,13 @@ details {
   
 .ba{
   background-color:#f7f7f7;
+}
+
+.sya a{
+  color: #000000;
+}
+.sya a:hover{
+  color:blue;
 }
 
 
@@ -437,8 +448,8 @@ summary {
 .port {
     display: none; /* 初期状態では非表示 */
     position: fixed; /* ウィンドウの中央に固定 */
-    top: 40%; /* 画面の縦方向中央 */
-    right: -17%; /* 画面の横方向中央 */
+    top: 30%; /* 画面の縦方向中央 */
+    right: -18%; /* 画面の横方向中央 */
     transform: translate(-50%, -50%); /* 幅と高さを考慮して完全に中央揃え */
 
     width: 600px; /* 任意の幅 */
@@ -455,8 +466,8 @@ summary {
 .port2 {
   display: none; /* 初期状態では非表示 */
   position: fixed; /* ウィンドウの中央に固定 */
-  top: 40%; /* 画面の縦方向中央 */
-  right: -17%; /* 画面の横方向中央 */
+  top: 30%; /* 画面の縦方向中央 */
+  right: -18%; /* 画面の横方向中央 */
   transform: translate(-50%, -50%); /* 幅と高さを考慮して完全に中央揃え */
 
   width: 600px; /* 任意の幅 */
@@ -473,8 +484,8 @@ summary {
 .port3 {
   display: none; /* 初期状態では非表示 */
   position: fixed; /* ウィンドウの中央に固定 */
-  top: 40%; /* 画面の縦方向中央 */
-  right: -17%; /* 画面の横方向中央 */
+  top: 30%; /* 画面の縦方向中央 */
+  right: -18%; /* 画面の横方向中央 */
   transform: translate(-50%, -50%); /* 幅と高さを考慮して完全に中央揃え */
 
   width: 600px; /* 任意の幅 */
@@ -491,8 +502,8 @@ summary {
 .port4 {
   display: none; /* 初期状態では非表示 */
   position: fixed; /* ウィンドウの中央に固定 */
-  top: 40%; /* 画面の縦方向中央 */
-  right: -17%; /* 画面の横方向中央 */
+  top: 30%; /* 画面の縦方向中央 */
+  right: -18%; /* 画面の横方向中央 */
   transform: translate(-50%, -50%); /* 幅と高さを考慮して完全に中央揃え */
 
   width: 600px; /* 任意の幅 */
