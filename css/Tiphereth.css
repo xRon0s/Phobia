@@ -587,6 +587,7 @@ summary {
 
 .port-image5 {
   width: 100%; /* 画像の幅をポートの幅に合わせる */
+  height: 70%;
   border: 1px solid #ccc; /* グレーの枠をつける */
   margin-bottom: 10px; /* 画像とテキストの間にスペースを追加 */
 }
@@ -641,7 +642,7 @@ summary {
   display: block;
 }
 
-.lin5:hover ~ .port4{
+.lin5:hover ~ .port5{
   display: block;
 }
 
